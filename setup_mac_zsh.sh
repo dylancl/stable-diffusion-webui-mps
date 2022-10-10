@@ -19,7 +19,7 @@ else
 fi
 
 # Initialize conda
-conda init
+conda init zsh
 
 # Remove previous conda environment
 conda remove -n web-ui --all
