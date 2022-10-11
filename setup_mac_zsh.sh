@@ -94,12 +94,6 @@ else
 fi
 
 # Install dependencies
-
-# In order for the requirements.txt packages to install correctly, functorch needs to be installed already.
-# functorch will not successfully build without torch, but also won't build under the nightly build we use.
-pip install torch==1.12.1
-pip install git+https://github.com/pytorch/functorch@a6e0e61242d2ed10287965c3febc426fd6abf5f9
-
 pip install -r requirements.txt
 
 pip install git+https://github.com/openai/CLIP.git@d50d76daa670286dd6cacf3bcd80b5e4823fc8e1
