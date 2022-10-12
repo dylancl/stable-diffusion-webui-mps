@@ -94,7 +94,7 @@ else
 fi
 
 # Install dependencies
-pip install -r requirements.txt
+conda install -r requirements.txt
 
 pip install git+https://github.com/openai/CLIP.git@d50d76daa670286dd6cacf3bcd80b5e4823fc8e1
 
