@@ -162,7 +162,7 @@ conda activate web-ui
 git pull --rebase
 
 # Run the web ui
-python webui.py --precision full --no-half --use-cpu Interrogate GFPGAN CodeFormer BSRGAN ESRGAN SCUNet \$@
+python webui.py --precision full --no-half --use-cpu Interrogate GFPGAN CodeFormer swinir ESRGAN SCUNet \$@
 
 # Deactivate conda environment
 conda deactivate
@@ -187,6 +187,4 @@ echo "============================================="
 
 
 # Run the web UI
-python webui.py --precision full --no-half --use-cpu Interrogate GFPGAN CodeFormer BSRGAN ESRGAN SCUNet
-
-
+python webui.py --precision full --no-half --use-cpu Interrogate GFPGAN CodeFormer swinir ESRGAN SCUNet
