@@ -99,6 +99,11 @@ else
     echo "============================================="
     exit 1
 fi
+# There's an issue that onnx, dependency of invisible-watermark, is not properly installed on the M1 silicons.
+# it is still opened    https://github.com/onnx/onnx/issues/3129  
+# Therefore we should install onnx with conda instead of pip in prior to installing with pip.
+# Otherwise other dependencies would be skipped without being installed.
+conda install onnx
 
 # Install dependencies
 pip install -r requirements.txt
